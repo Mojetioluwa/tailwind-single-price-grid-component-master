@@ -8,38 +8,63 @@
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+              Cyan: 'hsl(179, 62%, 43%)',
+              BrightYellow: 'hsl(71, 73%, 54%)',
+              LightGray: 'hsl(204, 43%, 93%)',
+              GrayishBlue: 'hsl(218, 22%, 67%)',
+          },
+
+          fontFamily: {
+            'display': ['Karla', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
 </head>
-<body class="max-w-3xl min-w-min m-auto bg-gray-200">
+<body class="max-w-3xl min-w-min m-auto bg-gray-200 font-['Karla']">
   <!-- <div class=" sm:grid sm:grid-cols-3 gap-2"> -->
 
     <div class="p-10 pt-30">
       <div class="bg-white p-20 rounded-t-lg">
-        <p class="text-4xl font-bold text-left">Join our community</p>
+        <p class="text-4xl font-['Karla'] font-bold text-[#29b3b0] text-left">Join our community</p>
 
-        <p class="pt-4 font-semibold text-xl text-blue-600">30-day, hassle-free money back guarantee</p>
+        <p class="pt-4 font-semibold font-['Karla'] text-[#C0DF34] text-xl">30-day, hassle-free money back guarantee</p>
       
-        <p class="pt-4 text-lg">Gain access to our full library of tutorials along with expert code reviews. 
+        <p class="pt-4 text-lg text-gray-500">Gain access to our full library of tutorials along with expert code reviews. 
           Perfect for any developers who are serious about honing their skills.    
         </p>
 
       </div>
 
-      <div class="bg-blue-600 p-20 text-white">
+      <div class="bg-[#29b3b0] p-20 text-white">
         <p class="font-bold text-xl">Monthly Subscription</p>
 
-        <p class="pt-8 text-6xl font-bold">&dollar;29 <span class="text-xl font-medium text-black">per month</span></p>
+        <p class="pt-8 text-6xl font-bold">&dollar;29 <span class="text-xl font-medium text-gray-200">per month</span></p>
 
         <p class="pt-8 ">Full access for less than <span class="text-2xl">&dollar;1</span> a day</p>
 
-        <button class="mt-8 p-3 w-80 text-blue-600 bg-gray-50 rounded-lg font-bold  
+        <button class="mt-8 p-3 w-80 text-white bg-[#C0DF34] rounded-lg font-bold  
               tracking-wide hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-4
               focus:ring-opacity-50 transform transition hover:bg-gray-200 focus:ring-blue-900 active:bg-blue-950">
             Sign Up
         </button>
       </div>
 
-      <div class="bg-blue-400 p-20 rounded-b-lg">
+      <div class="bg-[#29a2a0] p-20 rounded-b-lg text-white">
         <p class="font-bold text-2xl">Why Us</p>
 
         <ul class="pt-8 text-lg">
